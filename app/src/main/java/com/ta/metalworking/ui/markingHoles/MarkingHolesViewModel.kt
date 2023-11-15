@@ -1,10 +1,10 @@
-package com.ta.metalworking.ui.home
+package com.ta.metalworking.ui.markingHoles
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class MarkingHolesViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"

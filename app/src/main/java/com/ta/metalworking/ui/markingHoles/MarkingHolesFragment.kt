@@ -1,4 +1,4 @@
-package com.ta.metalworking.ui.home
+package com.ta.metalworking.ui.markingHoles
 
 import android.content.Context
 import android.os.Bundle
@@ -11,18 +11,15 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.navigation.NavigationView
-import com.ta.metalworking.R
-import com.ta.metalworking.databinding.FragmentHomeBinding
+import com.ta.metalworking.databinding.FragmentMarkingBinding
 import java.text.DecimalFormat
 import kotlin.math.PI
 import kotlin.math.sin
 
-class HomeFragment : Fragment(),View.OnClickListener {
+class MarkingHolesFragment : Fragment(),View.OnClickListener {
 
     private lateinit var resTextView: TextView
     private lateinit var diametrTextView: EditText
@@ -35,7 +32,7 @@ class HomeFragment : Fragment(),View.OnClickListener {
 
 
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentMarkingBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -47,7 +44,7 @@ class HomeFragment : Fragment(),View.OnClickListener {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout using the binding object
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentMarkingBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         // Access the views from the binding object
