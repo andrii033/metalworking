@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/nav_marking"
         android:name="com.ta.metalworking.ui.markingHoles.MarkingHolesFragment"
-        android:label="@string/menu_home"
+        android:label="@string/menu_markingHoles"
         tools:layout="@layout/fragment_marking" />
 
     <fragment
@@ -22,4 +22,9 @@
         android:name="com.ta.metalworking.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_keyway_dimensions"
+        android:name="com.ta.metalworking.ui.keyway.KeywayDimensionsFragment"
+        android:label="@string/menu_keyway"
+        tools:layout="@layout/fragment_keyway_dimensions" />
 </navigation>
